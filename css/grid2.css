@@ -1,0 +1,43 @@
+.headerFooter {
+  background-color: aqua;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.middle {
+  display: flex;
+  gap: 5%;
+}
+.sidebar {
+  background-color: rgb(0, 160, 160);
+  height: 500px;
+  width: 30%;
+  text-align: center;
+}
+.maincontents {
+  background-color: brown;
+  text-align: center;
+  color: white;
+  width: 70%;
+}
+.article {
+  padding-top: 200px;
+}
+.body {
+  background-color: rgb(255, 147, 147);
+}
+.images {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+  width: fit-content;
+}
+.images div {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+/* comment */
+/* command / */

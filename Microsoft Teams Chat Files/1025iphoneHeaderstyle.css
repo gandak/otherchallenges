@@ -1,0 +1,101 @@
+nav {
+  width: 100vw;
+  background-color: rgb(37, 37, 37);
+}
+.menu {
+  display: flex;
+  background-color: rgb(37, 37, 37);
+  justify-content: center;
+  width: 70vw;
+  height: 40px;
+  margin: auto;
+  padding-top: 10px;
+}
+.menu div {
+  width: 30px;
+  color: rgb(178, 178, 178);
+  width: 50%;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.menu div:hover {
+  color: white;
+  cursor: pointer;
+}
+.menu img {
+  height: 20px;
+  width: 30px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+.banner {
+  width: 100vw;
+  position: relative;
+}
+.banner img {
+  width: 100vw;
+}
+.buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+}
+.button1 {
+  background-color: rgb(0, 132, 255);
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  bottom: 0;
+}
+.button1:hover {
+  background-color: rgb(68, 165, 255);
+}
+.button2 {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: rgb(0, 132, 255);
+  font-weight: 700;
+  border: solid 2px rgb(0, 132, 255);
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: rgb(0, 132, 255);
+  cursor: pointer;
+  color: white;
+}
+.buttons p {
+  color: rgb(117, 117, 117);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+.banner2 {
+  width: 100vw;
+  position: relative;
+}
+.banner2 img {
+  object-fit: contain;
+  width: 100%;
+}
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title h2 {
+  font-size: 45px;
+  height: 20px;
+}
+.title p {
+  font-size: 20px;
+}

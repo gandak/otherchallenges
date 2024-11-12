@@ -1,0 +1,490 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+.header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: center;
+  height: 100px;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.menu div {
+  cursor: pointer;
+}
+.menu i {
+  cursor: pointer;
+}
+.header img {
+  width: 130px;
+  cursor: pointer;
+}
+.widgets {
+  display: flex;
+  gap: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  cursor: pointer;
+}
+.weather p {
+  margin: 2px 0px;
+  font-size: 13px;
+  align-items: center;
+}
+.weather div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.weather div p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.weather div i {
+  color: #ffbb00;
+}
+.zurkhai p {
+  margin: -1px 0px;
+  font-size: 13px;
+  text-align: end;
+  margin: 2px 0px;
+}
+.zurkhai div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.zurkhai div p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.zurkhai div i {
+  color: #008adf;
+}
+
+.exchange p {
+  margin: -1px 0px;
+  font-size: 13px;
+  text-align: end;
+  margin: 2px 0px;
+}
+.exchange div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.exchange div p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.exchange div i {
+  color: #59ff00;
+}
+.banner {
+  max-width: 1200px;
+}
+.banner img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.mainArticle {
+  background-image: linear-gradient(
+    to right,
+    rgb(247, 247, 247),
+    rgb(255, 255, 255)
+  );
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+  height: 385px;
+}
+.mainArticleTitle {
+  padding: 40px 10px 40px 40px;
+  width: 600px;
+}
+.mainArticleTitle h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mainArticleTitle p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: grey;
+  cursor: pointer;
+}
+.share {
+  display: flex;
+  gap: 10px;
+  background-color: rgb(240, 240, 240);
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.share i {
+  color: rgb(183, 183, 183);
+}
+.share p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.mainArticle-container {
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 385px;
+  overflow: hidden;
+}
+
+.mainArticle-container:hover .overlay {
+  opacity: 0.5;
+}
+.mainArticle-container:hover img {
+  /* position: absolute; */
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.mainArticle-container img {
+  height: 385px;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.mainArticleOthers {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(252, 252, 252));
+  display: flex;
+  max-width: 1200px;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+  height: 320px;
+}
+
+.mainArticleOthers .others {
+  width: 290px;
+  overflow: hidden;
+}
+/* .mainArticleOthers div img {
+  width: 280px;
+  border-radius: 5px;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+} */
+.others-image-container {
+  width: 280px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.others-image-container img {
+  width: 280px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* .others-image-container:hover .overlay {
+  opacity: 0.5;
+} */
+.others-image-container:hover img {
+  transform: scale(1.1);
+}
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+.overlay a {
+  color: white;
+  text-decoration: none;
+}
+/* .mainArticleOthers div img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+} */
+.mainArticleOthers div p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.smallBanner img {
+  width: 280px;
+  height: 280px !important;
+}
+.story {
+  max-width: 1200px;
+}
+.story-title {
+  display: flex;
+  width: 150px;
+  gap: 5px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.story-title p {
+  font-weight: 700;
+  font-size: 30px;
+}
+.story-title div {
+  background-color: #00b0f4;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.story-carousel {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  justify-content: space-between;
+  height: 250px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.storyMedee {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.storyMedee img {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.storyMedee img:hover {
+  transform: scale(1.1);
+}
+.storyMedee div {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  padding-left: 10px;
+  height: 100px;
+  translate: 0px 60px;
+  transition: all 0.3;
+  overflow: hidden;
+}
+.storyMedee div:hover {
+  translate: 0px 30px;
+}
+.storyMedee4 {
+  background-image: url("https://mgl.gogo.mn/newsn/story/p-1-91214305-apple-intelligence-launch-iphone-ios-18-siri-ai-photo-summary-proofread-672061d7b29f1261626732.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 180px;
+  height: 250px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.storyMedee4:hover {
+  background-size: 130%;
+}
+.storyMedee4 div {
+  color: white;
+  padding: 10px 10px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 70%, black 100%);
+  border-radius: 10px;
+  /* translate: 0px 80px; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.storyMedee4 div p {
+  width: 180px;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 10px 10px; */
+}
+.storyMedee5 {
+  background-image: url("https://mgl.gogo.mn/newsn/story/p-1-91214305-apple-intelligence-launch-iphone-ios-18-siri-ai-photo-summary-proofread-672061d7b29f1261626732.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 180px;
+  height: 250px;
+}
+.storyMedee5 p {
+  display: flex;
+  color: white;
+  align-items: flex-end;
+  bottom: 0;
+}
+.storyMedee6 {
+  background-image: url("https://mgl.gogo.mn/newsn/story/p-1-91214305-apple-intelligence-launch-iphone-ios-18-siri-ai-photo-summary-proofread-672061d7b29f1261626732.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 180px;
+  height: 250px;
+}
+.storyMedee6 p {
+  display: flex;
+  color: white;
+  align-items: flex-end;
+  bottom: 0;
+}
+.top {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.top img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.gradient {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgb(0, 0, 0)
+  );
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  opacity: 70%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: 30%;
+  margin-bottom: 15px;
+}
+.text {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.maincategory {
+  background-image: linear-gradient(
+    to right,
+    rgb(206, 48, 0),
+    rgb(215, 125, 0)
+  );
+  font-size: 13px;
+  width: 80px;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.category {
+  background-color: rgb(0, 110, 255);
+  font-size: 12px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  height: 20px;
+  border-radius: 3px;
+  padding-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.title {
+  width: 90%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 30px;
+  z-index: 2;
+}
+#link {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+.mid {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.bmedee {
+  width: 100vw;
+  position: relative;
+}
+.bmedee img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.category:hover {
+  background-color: rgb(0, 100, 255);
+}
+.gradient2 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgb(0, 0, 0)
+  );
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  opacity: 70%;
+  border-radius: 10px;
+}
+.title2 {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 30px;
+  z-index: 2;
+}
+.text2 {
+  font-size: 14px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}

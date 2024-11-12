@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  gap: 10px;
+}
+.sidebar {
+  background-color: green;
+  height: 500px;
+  width: 250px;
+}
+.midbox1 {
+  width: 500px;
+  height: 160px;
+  background-color: green;
+  margin-bottom: 10px;
+}
+.midbox2 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.midbox2-1 {
+  background-color: orange;
+  width: 245px;
+  height: 160px;
+}
+.midbox2-2 {
+  background-color: red;
+  width: 245px;
+  height: 160px;
+}
+.midbox3 {
+  display: flex;
+  gap: 10px;
+}
+
+.midbox3-1 {
+  background-color: red;
+  width: 245px;
+  height: 160px;
+}
+.midbox3-2 {
+  background-color: orange;
+  width: 245px;
+  height: 160px;
+}
+.lbox1 {
+  width: 250px;
+  height: 160px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+.lbox2 {
+  width: 250px;
+  height: 330px;
+  background-color: green;
+}

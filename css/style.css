@@ -1,0 +1,42 @@
+.lotr {
+  background-color: rgb(0, 0, 0);
+  width: 220px;
+  text-align: center;
+  padding-top: 10px;
+}
+.dark {
+  background-color: rgb(0, 0, 0);
+  width: 220px;
+  text-align: center;
+  padding-top: 10px;
+}
+.hobbit {
+  background-color: rgb(0, 0, 0);
+  width: 220px;
+  text-align: center;
+  padding-top: 10px;
+}
+.avengers {
+  background-color: rgb(0, 0, 0);
+  width: 220px;
+  text-align: center;
+  padding-top: 10px;
+}
+.table1 {
+  display: flex;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.table2 {
+  display: flex;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.header {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
