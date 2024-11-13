@@ -13,26 +13,41 @@
   </head>
   <body>
     <div class="header-bg">
-      <div class="logo-section">
-        <div class="logo">
-          <img src="./images/mobicom-logo.png" alt="" />
-        </div>
-        <button class="icon"><i class="fa fa-search"></i></button>
-      </div>
-      <nav>
-        <div class="menu">
-          <div class="drop-menu">
-            <button class="dropbtn">Үйлчилгээ</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
+      <div class="header-container">
+        <div class="logo-section">
+          <div class="logo">
+            <img src="./images/mobicom-logo.png" alt="" />
           </div>
-          <div class="nondrop-menu">Мэдээлэл</div>
-          <div class="nondrop-menu">Дэлгүүр</div>
+          <div class="button-container">
+            <button class="search">
+              <i class="fa fa-search fa-lg"></i>
+              <input type="text" name="text" id="" placeholder="Хайх" />
+            </button>
+          </div>
         </div>
-      </nav>
+        <nav>
+          <div class="menu">
+            <div class="drop-menu">
+              <button class="dropbtn">
+                Үйлчилгээ <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <!-- <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div> -->
+            </div>
+            <div class="nondrop-menu">Мэдээлэл</div>
+            <div class="nondrop-menu">Дэлгүүр</div>
+          </div>
+        </nav>
+
+        <div class="widgets">
+          <div class="skin"><i class="fa-solid fa-sun"></i></div>
+          <div class="language"><i class="fa-solid fa-globe"></i></div>
+          <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

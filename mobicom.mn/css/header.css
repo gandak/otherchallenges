@@ -1,0 +1,107 @@
+.header-bg {
+  background-color: rgba(42, 42, 42, 255);
+  max-width: 96vw;
+  margin: auto;
+  border-radius: 1rem;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+}
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-section {
+  display: flex;
+  gap: 20px;
+}
+.button-container {
+  background-color: #3d3d3d;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  width: 230px;
+}
+.logo-section button {
+  background-color: transparent;
+  border: none;
+  color: rgb(139, 139, 139);
+}
+/* .search {
+  height: 60px;
+} */
+.logo-section .search input {
+  background: none;
+  border: none;
+  color: rgb(139, 139, 139);
+  font-size: 16px;
+}
+.logo-section .search input:focus {
+  outline: none;
+}
+.logo-section .logo img {
+  width: 64px;
+  height: 36px;
+}
+
+/* MENU  */
+.menu {
+  color: white;
+  display: flex;
+  gap: 25px;
+  font-family: "__Nunito_c7fb5b", "__Nunito_Fallback_c7fb5b", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+}
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "__Nunito_c7fb5b", "__Nunito_Fallback_c7fb5b", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  width: 110px;
+  height: 40px;
+}
+.drop-menu:hover {
+  background: grey;
+  border-radius: 10px;
+}
+
+.nondrop-menu {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+.nondrop-menu:hover {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* WIDGETS  */
+
+.widgets {
+  display: flex;
+  gap: 10px;
+}
+
+.widgets div {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.widgets div i {
+  color: white;
+}

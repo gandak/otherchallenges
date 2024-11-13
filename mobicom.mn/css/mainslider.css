@@ -1,0 +1,26 @@
+.slider-container {
+  width: 96vw;
+  height: 700px;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideshow 15s ease-in-out infinite;
+  border-radius: 10px;
+}
+@keyframes slideshow {
+  0% {
+    background-image: url("../images/sliderimage1.webp");
+  }
+  25% {
+    background-image: url("../images/sliderimage2.webp");
+  }
+  50% {
+    background-image: url("../images/sliderimage1.webp");
+  }
+  75% {
+    background-image: url("../images/sliderimage2.webp");
+  }
+  100% {
+    background-image: url("../images/sliderimage1.webp");
+  }
+}
