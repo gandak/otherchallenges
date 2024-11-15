@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.carousel-bg {
+  width: 95vw;
+  height: 540px;
+  background-color: rgba(31, 31, 31, 0.96);
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.carousel-bg h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 52px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TABS  */
+.carousel-tabs-container {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  gap: 30px;
+}
+.carousel-tabs-container .carousel-tabs-bg {
+  width: 70%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3d3d3d;
+  align-items: center;
+  padding: 0px 8px;
+  border-radius: 15px;
+  border: solid 0.1px rgb(101, 101, 101);
+}
+
+.carousel-readmore {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.carousel-readmore a:hover {
+  text-decoration: underline;
+}
+
+.carousel-readmore a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.tab {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 0px 10px;
+}
+.tab:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.tab-icon {
+  height: 20px;
+}
+
+.tab .tab-title {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(168, 168, 168);
+}
+
+.tab-icon svg {
+  fill: rgb(163, 163, 163);
+  height: 20px;
+  width: 20px;
+}
+
+.tab:nth-child(1) {
+  background-color: white;
+}
+.tab:nth-child(1) svg {
+  fill: #ef4444;
+}
+
+/* CAROUSEL  */
+.carousels {
+  /* margin-top: 20px;
+  margin-left: 20px; */
+  overflow: scroll;
+
+  height: 480px;
+  padding: 64px;
+  display: flex;
+  gap: 25px;
+}
+.right-icons {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.right-icon {
+  height: 32px;
+  width: 32px;
+  background-color: #282828;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+.right-icon svg {
+  height: 16px;
+  width: 16px;
+  fill: #fbbf24;
+}
+
+.right-icons div:nth-child(2) {
+  display: none;
+  transition: all 1s;
+}
+
+.carousel-container {
+  /* margin-left: 30px;
+  margin-top: 35px; */
+  min-width: 235px;
+  height: 353px;
+  background-color: blue;
+  border-radius: 13px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(../images/carousel1.webp);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* overflow: hidden; */
+  transition: all 1s;
+}
+
+.carousel-title {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  /* translate: 0px 30px; */
+  width: 90%;
+  padding: 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.6s ease;
+}
+.carousel-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.carousel-container:hover .carousel-title p {
+  display: block;
+}
+.carousel-container:hover .carousel-title {
+  translate: 0px -30px;
+}
+.carousel-container:hover .right-icons div:nth-child(2) {
+  display: flex;
+}
+.carousel-container:hover {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4753363228699552) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(../images/carousel1.webp);
+}
+
+.carousel-title h3 {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.carousel-title p {
+  display: none;
+  font-size: 13px;
+  color: rgb(169, 169, 169);
+  line-height: 1.3;
+  transition: all 1s ease;
+}
+
+/* MEDIA QUERY  */
+
+@media screen and (min-width: 768px) {
+  .tab-icon {
+    display: none;
+  }
+  .tab .tab-title {
+    display: flex;
+    /* display: flex; */
+  }
+  .tab {
+    height: 40px;
+    padding: 0px 10px;
+  }
+  .tab:nth-child(1) .tab-title {
+    color: black;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-tabs-container {
+    width: 70vw;
+  }
+  .carousel-readmore {
+    display: flex;
+  }
+}
